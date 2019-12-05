@@ -4,7 +4,10 @@ include(${ziti-deps_BINARY_DIR}/Catch2/${CMAKE_INSTALL_LIBDIR}/cmake/Catch2/Pars
 
 add_executable(all_tests
         all_tests.cpp
-        test_model.cpp)
+        test_model.cpp
+        test_jwt.cpp
+        )
+
 set_property(TARGET all_tests PROPERTY CXX_STANDARD 11)
 
 target_include_directories(all_tests PRIVATE ${ziti-deps_BINARY_DIR}/Catch2/include)
